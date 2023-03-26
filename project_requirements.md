@@ -1,4 +1,4 @@
-#TASKS
+TASKS
 1.Create the Dataset object that properly load the input image and target mask. Save the class definition in the git repo.
 display a few images without data augmentations, use some proper color map from matplotlib for better visualization.
 Remember for training, you need to preprocess the target mask with the maximum depth.
