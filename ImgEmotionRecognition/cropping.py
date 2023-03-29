@@ -1,11 +1,11 @@
 import torchvision.io
-from facenet_pytorch import MTCNN, InceptionResnetV1
+from facenet_pytorch import MTCNN
 import cv2 as cv
 import os
 
 
 def crop_images(video_name, new_folder):
-    frames = torchvision.io.read_video(os.path.join("videos",video_name))[0]
+    frames = torchvision.io.read_video(os.path.join("../videos", video_name))[0]
     mtcnn = MTCNN(image_size=224)
     os.makedirs(new_folder, exist_ok=True)
     for i, frame in enumerate(frames):
