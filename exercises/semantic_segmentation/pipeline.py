@@ -1,5 +1,5 @@
-from semantic_segmentation.data_preparation import Dataset
-from semantic_segmentation.FFN import Up_Head
+from exercises.semantic_segmentation.data_preparation import Dataset
+from exercises.semantic_segmentation.FFN import Up_Head
 import torch
 
 dataset = Dataset("/home/stepi2299/repo/eadir2/data/seg_data")

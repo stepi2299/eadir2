@@ -79,7 +79,7 @@ class SRDataset(Dataset):
 
 
 deg_model = DegradationModel(transform_degrade)
-sr_dataset = SRDataset("../data/sr_data", transform, deg_model)
+sr_dataset = SRDataset("../../data/sr_data", transform, deg_model)
 
 sr_dataset.visualize_data(0)
 plt.show()

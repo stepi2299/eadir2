@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torchvision.models import efficientnet_b0
 
-from DepthEstimation.utils import NYUDataset, visualize_depth_map, visual_mask_fn, data_transform
+from exercises.DepthEstimation.utils import NYUDataset, visualize_depth_map, visual_mask_fn, data_transform
 
 
 
@@ -179,8 +179,8 @@ class EfficientNetBiFPN(nn.Module):
 
 
 data = NYUDataset(
-  annotations_file='../../data/nyu_samples/nyu2_test.csv',
-  img_dir='../../data/nyu_samples/nyu2_test',
+  annotations_file='../../../data/nyu_samples/nyu2_test.csv',
+  img_dir='../../../data/nyu_samples/nyu2_test',
   transform=data_transform,
   target_transform=visual_mask_fn
 )
