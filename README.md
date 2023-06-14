@@ -15,3 +15,4 @@ In folder exercises i have implemented exercises connected with applications lik
 3. Video/Audio Emotion Recognition (*VideoEmotionRecognition*)
 4. Depth Estimation
 5. Super Resolution
+6. Quantization (Post Training Quantization)
